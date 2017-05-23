@@ -1,0 +1,394 @@
+@font-face{
+	font-family: 'Indira';
+	src: url('../Indira_K.woff2') format('woff2'),
+		 url('../Indira_K.woff') format('woff'),
+		 url('../Indira_K.ttf') format('truetype');
+}
+
+body
+{
+	/*font-family: Quicksand;*/
+	color: #FFFFFF;
+	background: url(../images/Background2.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	/*background: -webkit-linear-gradient(top, rgb(27, 26, 30) 0%, rgb(79, 36, 41) 50%, rgb(160, 44, 32) 100%);
+    background: -o-linear-gradient(top, rgb(27, 26, 30) 0%, rgb(79, 36, 41) 50%, rgb(160, 44, 32) 100%);
+    background: -ms-linear-gradient(top, rgb(27, 26, 30) 0%, rgb(79, 36, 41) 50%, rgb(160, 44, 32) 100%);
+    background: -moz-linear-gradient(top, rgb(27, 26, 30) 0%, rgb(79, 36, 41) 50%, rgb(160, 44, 32) 100%);
+    background: linear-gradient(to bottom, rgb(27, 26, 30) 0%, rgb(79, 36, 41) 50%, rgb(160, 44, 32) 100%);*/
+    font-family: 'Indira', sans-serif;
+}
+
+html, body{
+	margin: 0 auto;
+	height: 100%;
+}
+
+h3 {
+	display: block;
+	margin: 0 0;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	color: #A78A49;
+	text-shadow: 0px 2px 1px #101010;
+}
+
+.content {
+	/*background: rgba(40, 40, 40, .8);*/
+	height: 100%;
+	margin: 10% 10px 0 10px;
+	padding: 2% 0 1% 0;
+	width: 32%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.content_row {
+	text-align: center;
+}
+
+.formulario{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.formulario table{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.imagen_videojuego {
+	/*text-align: center;
+	background-color: #4F4F4F;*/
+	display: inline-block;
+	height: 60px;
+	margin: 0 1px;
+	width: 60px;
+}
+
+#logo{
+	display: inline-block;
+	vertical-align: top;
+	height: 48px;
+	margin: 0 10px;
+}
+
+#logo img
+{
+	width: 180px; height: 48px;
+	-webkit-transition: all 0.05s ease-in;
+	opacity: 0.6;
+}
+
+#logo img:hover
+{
+	opacity: 1;
+	-webkit-transition: all 0.05s ease-in;
+}
+
+#navigation{
+	display: inline-block;
+	vertical-align: middle;
+	height: 48px;
+}
+
+#header
+{
+	background-color: #333333;
+	height: 48px;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#header .container{
+	margin: 0 auto;
+	width: 1060px;
+	height: 48px;
+}
+
+#header a
+{
+	color: #A78A49;
+	text-decoration: none;
+	-webkit-transition: all 0.05s ease-in;
+}
+
+#header p
+{
+	margin-top: 5px;
+}
+
+#header a:hover
+{
+	color: #E3A824;
+	-webkit-transition: all 0.05s ease-in;
+}
+
+#breadCrumbs{
+	font-size: 16px;
+	background-color: #373737;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #2F2F2F;
+}
+
+#breadCrumbs p{
+	color: #9DA6A9;
+}
+
+.titulo_videojuego {
+	display: inline-block;
+	height: 20px;
+	position: relative;
+}
+
+.videojuego {
+	height: 100%;
+	margin: 0 1%;
+	padding: 5px;
+	text-align: center;
+	width: 60px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.videojuego img {
+	height: 100%;
+    vertical-align:top;
+	width: 100%;
+	cursor: pointer;
+}
+
+.wrapper {
+
+}
+
+.headerItem{
+	display: inline-block;
+	height: 25px;
+	padding: 10px 10px;
+	vertical-align: top;
+	-webkit-transition: all 0.05s ease-in;
+}
+
+.headerSelected{
+	border-bottom-color: #7E0909;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+}
+
+.championInformation{
+	width: 63%;
+	height: 65%;
+	vertical-align: top;
+	margin: 3% 1%;
+	transition: all 0.8s linear;
+	display: inline-block;
+}
+
+
+.championImage{
+	margin: 10px auto 0 auto;
+	width: 360px;
+	height: 360px;
+}
+
+.championImage img{
+	width: auto;
+	height: 360px;
+}
+
+#RookInfo img{
+	margin: 0 -115px;
+}
+
+#FreyaInfo img{
+	margin: 0 50px;
+}
+
+#Ruh_KaanInfo img{
+	margin: 0 -80px;
+}
+
+.championName{
+	width: 140px;
+	margin: 0 auto;
+}
+
+.championName h2{
+	text-align: center;
+	font-size: 20px;
+	color: #BA850F;
+	font-weight: bold;
+	text-shadow: 0px 2px 1px #101010;
+}
+
+.championDescription{
+	margin-top: 10%;
+	width: 40%;
+}
+
+.hidden{
+	display: none;
+}
+
+.visuallyHidden{
+	opacity: 0;
+}
+
+#newChampContainer{
+	width: 305px;
+	height: 400px;
+	margin: 0 auto;
+	background: rgba(10, 10, 10, 0.3);
+	padding: 5px 40px 40px 40px;
+}
+
+#newChampContainer label{
+	color: #D7AA44;
+	text-shadow: 0px 2px 1px #101010;
+}
+
+.image{
+	color: #A78A49;
+	text-shadow: 0px 2px 1px #101010;
+}
+
+.tableRow{
+	margin: 12px 0 12px 0;	
+}
+
+.tableRow textarea{
+	height: 80px;
+	width: 300px;
+}
+
+.text{
+	width: 290px;
+}
+
+.submitButton{
+	width: 140px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.button{
+	color: #A78A49;
+	text-shadow: 0px 2px 1px #101010;
+    font-family: 'Indira', sans-serif;
+	height: 40px;
+	width: 140px;
+	border-radius: 3px;
+	background-color: #2E0808;
+	border-style: none;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+h1{
+	color: #A9780A;
+	text-shadow: 0px 2px 1px #101010;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#tableContainer{
+	color: #A78A49;
+	width: 400px;
+	height: 100%;
+	margin: 40px auto 0 auto;
+	text-shadow: 0px 2px 1px #101010;
+	background-color: rgba(30, 30, 30, 0.4);
+}
+
+#tableHeaderRow{
+	width: 100%;
+	height: 20px;
+	display: block;
+}
+
+.tableHeaderItem, .tableBodyItem{
+	display: inline-block;
+	width: 90px;	
+}
+
+.tableHeaderItem p, .tableBodyItem p{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#tableBodyRow{
+	width: 100%;
+	height: 80px;
+	display: block;
+}
+
+.tableBodyItem{
+	height: 80px;
+	vertical-align: top;
+}
+
+#listSearch{
+	width: 400px;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+
+.tableChampionIcon{
+	width: 60px;
+	height: 60px;
+	margin: 10px 0 0 15px;
+}
+
+.tableBodyItem p{
+	margin: 35px 0;
+}
+
+.modifyIcon, .deleteIcon{
+	height: 24px;
+	height: 24px;
+	margin: 25px 0 0 35px;
+}
+
+#modifyContainer{
+	width: 300px;
+	height: 400px;
+	display: block;
+	margin: 0 auto;
+	color: #A9780A;
+	text-shadow: 0px 2px 1px #101010;
+	background-color: rgba(30, 30, 30, 0.4);
+	padding: 40px 50px 0 50px; 
+}
+
+.modifyDescription textarea{
+	height: 80px;
+	width: 300px;
+}
+
+.modifyName{
+	width: 300px;
+	height: 50px;
+}
+
+.modifyDescription{
+	width: 300px;
+	height: 100px;
+}
+
+.modifyButton{
+	width: 300px;
+	height: 80px;
+}
+
+.submitButton{
+	margin: 40px 80px;
+}
